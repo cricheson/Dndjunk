@@ -16,11 +16,8 @@ def next_to(a, b):
 	else:
 		print ("items are too far apart")
 		return False
+
 		
-
-#fighter_one_away = fighter[1] - orc[1]
-#rogue_one_away = rogue[1] - orc[1]
-
 def is_flanking(player1, monster, player2):
 	dist1 = distance(player1, monster)
 	dist2 = distance(player2, monster)
@@ -35,35 +32,3 @@ def is_flanking(player1, monster, player2):
 	
 
 print ("Are fighter and rogue flanking the orc {0}".format(is_flanking(fighter, orc, rogue)))
-
-#	if next_to(player1, monster):
-#		if next_to(player2, monster):
-#			if player1 != player2:
-#				print ("the rogue and fighter are flanking vertically")
-#				return True
-#			else:
-#				print ("the items are sharing a square")
-#	elif next_to_horz(player1, monster)
-#		if next_to_horz(player2, monster)
-#			if player1 != player2:
-#				print ("the rouge and fighter are flanking horz")
-#				return True
-#			else:
-#				print ("the items are sharing a square")
-#	return False
-
-
-
-
-#if abs(fighter_one_away) is 1:
-#	if abs(rogue_one_away) is 1:
-#		if fighter_one_away is not rogue_one_away:
-#			print ("the rogue and fighter are flanking")
-#		else:
-#			print ("the rogue and fighter are sharing a square")
-#	else:
-#		print ("the rogue needs to be better at flanking")
-#else:
-#	print ("the rogue and fighter are not flanking")
-
-
