@@ -10,7 +10,8 @@ class Skills(object):
 
 		self.skill_dict = {
 			'athletics': self.player_stats.str.modifier,
-			'perception': self.player_stats.wis.modifier
+			'perception': self.player_stats.wis.modifier,
+	#		'passive_perception': self.player_stats.wis.modifier
 		}
 
 ## Checks to see if you are proficient in a skill/stat/tool.
@@ -22,5 +23,16 @@ class Skills(object):
 		profs = ['athletics','drugs']
 		if player_skill in profs:
 			return 3+self.skill_dict[player_skill]()
+
 		else:
 			return self.skill_dict[player_skill]()
+
+
+	def passive_perception_calc(self, advantage):
+		self.advantage = advantage
+
+		if advantage is "yes":
+			return 10+5+self.skill_dict['perception']()
+
+
+		return 10+self.skill_dict['perception']()
