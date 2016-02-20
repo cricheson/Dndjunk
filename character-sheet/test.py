@@ -14,3 +14,4 @@ steve_skills = Skills(steve)
 print steve.str.val
 print steve_skills.skill_dict['athletics']()
 print steve_skills.is_proficient('perception')
+print steve_skills.passive_perception_calc("no")
