@@ -10,7 +10,28 @@ class Skills(object):
 
 		self.skill_dict = {
 			'athletics': self.player_stats.str.modifier,
+			'acrobatics': self.player_stats.dex.modifier,
+			'animal handling': self.player_stats.cha.modifier,
+			'Deception': self.player_stats.cha.modifier,
+			'history': self.player_stats.int.modifier,
+			'insight': self.player_stats.wis.modifier,
+			'intimidation': self.player_stats.cha.modifier,
+			'investigation': self.player_stats.int.modifier,
+			'medicine': self.player_stats.wis.modifier,
+			'nature': self.player_stats.int.modifier,
 			'perception': self.player_stats.wis.modifier,
+			'performance': self.player_stats.cha.modifier,
+			'persuasion': self.player_stats.cha.modifier,
+			'religion': self.player_stats.int.modifier,
+			'slight of hand': self.player_stats.dex.modifier,
+			'stealth': self.player_stats.dex.modifier,
+			'survival': self.player_stats.wis.modifier,
+			'strength': self.player_stats.str.modifier,
+			'dexterity': self.player_stats.dex.modifier,
+			'constitution': self.player_stats.con.modifier,
+			'intelligence': self.player_stats.int.modifier,
+			'wisdom': self.player_stats.wis.modifier,
+			'charisma': self.player_stats.cha.modifier,
 	#		'passive_perception': self.player_stats.wis.modifier
 		}
 
