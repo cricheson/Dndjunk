@@ -7,15 +7,24 @@ class ComputedStat(object):
 		return self.val / 2 - 5
 
 
+class ProficiencyBonus(object):
+	def __init__(self, val):
+		self.val = val
+		
+#This increases every 4 levels
+	def prof_bonus(self):
+		return self.val / 4
+
 class Stats(object):
 
-	def __init__(self, str, dex, con, int, wis, cha):
+	def __init__(self, str, dex, con, int, wis, cha, lvl):
 		self.str = ComputedStat(str)
 		self.dex = ComputedStat(dex)
 		self.con = ComputedStat(con)
 		self.int = ComputedStat(int)
 		self.wis = ComputedStat(wis)
 		self.cha = ComputedStat(cha)
+		self.lvl = ProficiencyBonus(lvl)
 
 #	def getstrmod(self):
 #		return self.str / 2 - 5
